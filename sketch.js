@@ -13,9 +13,9 @@ function preload() {
   car1_img = loadImage("Assets/John.png");
   car2_img = loadImage("Assets/Aurthur.png");
   track = loadImage("Assets/Background for Start.png");
-  fuelImage = loadImage("Assets/Lightning Bolt.png");
+  fuelImage = loadImage("Assets/Peaky Hat.png");
   powerCoinImage = loadImage("Assets/Money.png");
-  obstacle1Image = loadImage("Assets/Peaky Hat.png");
+  obstacle1Image = loadImage("Assets/Bomb.png");
   obstacle2Image = loadImage("Assets/Bomb.png");
   lifeImage = loadImage("Assets/Heart (Life).png");
   boom = loadImage("assets/blast.png");
