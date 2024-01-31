@@ -62,10 +62,10 @@ class Game {
       ];
   
       // Adding fuel sprite in the game
-      this.addSprites(fuels, 4, fuelImage, 0.02);
+      this.addSprites(fuels, 4, fuelImage, 0.12);
   
       // Adding coin sprite in the game
-      this.addSprites(powerCoins, 18, powerCoinImage, 0.09);
+      this.addSprites(powerCoins, 18, powerCoinImage, 0.12);
   
       //Adding obstacles sprite in the game
       this.addSprites(
@@ -94,6 +94,7 @@ class Game {
         sprite.addImage("sprite", spriteImage);
   
         sprite.scale = scale;
+        sprite.velocityY = 3
         spriteGroup.add(sprite);
       }
     }
@@ -199,22 +200,22 @@ class Game {
   
     showLife() {
       push();
-      image(lifeImage, width / 2 - 130, height - player.positionY - 300, 20, 20);
+      image(lifeImage, width / 2 - 130, height / 2 - 200, 20, 20);
       fill("white");
-      rect(width / 2 - 100, height - player.positionY - 300, 185, 20);
+      rect(width / 2 - 100, height / 2 - 200, 185, 20);
       fill("#f50057");
-      rect(width / 2 - 100, height - player.positionY - 300, player.life, 20);
+      rect(width / 2 - 100, height / 2 - 200, player.life, 20);
       noStroke();
       pop();
     }
   
     showFuelBar() {
       push();
-      image(fuelImage, width / 2 - 130, height - player.positionY - 250, 20, 20);
+      image(fuelImage, width / 2 - 140, height /2 - 125, 40, 40);
       fill("white");
-      rect(width / 2 - 100, height - player.positionY - 250, 185, 20);
+      rect(width / 2 - 100, height /2 - 115, 185, 20);
       fill("#ffc400");
-      rect(width / 2 - 100, height - player.positionY - 250, player.fuel, 20);
+      rect(width / 2 - 100, height/2 - 115, player.fuel, 20);
       noStroke();
       pop();
     }
